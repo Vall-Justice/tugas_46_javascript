@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Tugas 46 Javascript</title>
+</head>
+
+<body>
+   
+   <p>Click untuk merubah warna</p>
+   
+   <button type="submit" onclick="myFunction()">Ubah Warna</button>
+   
+   <script>
+   
+   
+      function myFunction() {
+         let warna = prompt("ketikkan warna yang kamu inginkan (english) : ");
+         
+         // jika dipencet cancel
+         warna =  warna ?? "white";
+         
+         
+         document.body.style.backgroundColor = warna;
+      }
+      
+      
+   </script>
+</body>
+
+</html>
